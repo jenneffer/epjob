@@ -1,0 +1,1470 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>FormWizard_v8</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<!-- <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css"> -->
+        <!-- BOOTSTRAP-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.css">
+		<!-- DATE-PICKER -->
+		<link rel="stylesheet" href="vendor/date-picker/css/datepicker.min.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+            <form action="" id="wizard" method="POST">
+                <input type="hidden" name="family_arr" id="family_arr">
+                <input type="hidden" name="friend_arr" id="friend_arr">
+                <input type="hidden" name="spouse_arr" id="spouse_arr">
+                <input type="hidden" name="reference_arr" id="reference_arr">
+                <input type="hidden" name="qualification_arr" id="qualification_arr">
+                <input type="hidden" name="employment_arr" id="employment_arr">
+                <!-- SECTION Email -->
+                <h4></h4>
+                <section>
+                    <h3>Please enter your email address</h3>
+                    <div class="form-group row">
+                        <div class="col-sm-6">  
+                            <label>Email address<span style="color: red;"> *</span></label>                                                  
+                            <input type="text" name="email" class="form-control" placeholder="Email">
+                        </div>                        
+                    </div>
+                </section>
+                <!-- SECTION PDPA Agreement-->
+                <h4></h4>
+                <section>
+                    <h3>NOTICE TO JOB APPLICANTS PURSUANT <br>TO THE PERSONAL DATA PROTECTION ACT 2010</h3>
+                    <div class="form-group">
+                        <div class="form-group col-sm-12">
+                            In compliance with the Personal Data Protection Act 2010 (“PDPA”) this Notice serves to inform you as job applicants that your personal data are being collected and processed by or on behalf of ENG PENG.
+                        </div>
+                        <div class="form-group col-sm-12">
+                            1. We may process your personal data, including those collected in this application form and any additional information you may subsequently provide to us through verbal and/or written communications for the purposes of processing, analysis, filing, reporting or contracting as part of the recruitment process.
+                        </div>
+                        <div class="form-group col-sm-12">
+                            2. The following personal data in relation to you might be required as part of the recruitment process to determine your suitability for the a particular position or for subsequent preparation of an employment contract:
+                            <br><span class="tab">a. name, identification no., nationality, date and place of birth, gender, marital status;</span>
+                            <br><span class="tab">b. contact details including address, telephone numbers, email address;</span>
+                            <br><span class="tab">c. medical history including physical or mental health or medical condition(s);</span>
+                            <br><span class="tab">d. personal financial and social security details including bank account number, SOCSO, EPF Number;</span>
+                            <br><span class="tab">e. details of family members and dependents and friends;</span>
+                            <br><span class="tab">f. particulars of educational qualification and academic achievements;</span>
+                            <br><span class="tab">g. employment history including salaries, employment periods, and position held;</span>
+                            <br><span class="tab">h. referees' contact and particulars;</span>
+                            <br><span class="tab">i. commission or alleged commission of any offence or proceedings for any offence committed or alleged to have been committed including past misconduct;</span>
+                            <br><span class="tab">j. any other information necessary to process your personal data for any of the purposes mentioned above.</span>
+                        </div>
+                        <div class="form-group col-sm-12">
+                           3. Your Personal Data may be used and processed by us for the following reasons, including but not limited to:-
+                            <br><span class="tab">a. Processing employment application, including pre-employment checks; or</span>
+                            <br><span class="tab">b. Monitoring compliance with our internal rules and policies; or</span>
+                            <br><span class="tab">c. Complying with the compliance and disclosure requirements of government regulatory and/or statutory bodies; or</span>
+                            <br><span class="tab">d. Subject to any law and regulations applicable to ENG PENG; or</span>
+                            <br><span class="tab">e. Any purposes relating thereto.</span>                            
+                        </div>
+                        <div class="form-group col-sm-12">
+                            4. It is obligatory that you supply us with the Personal Data required in this form and subsequent processes including interview(s) and further forms to be filled. If you fail to supply to us the required, we may not be able to process your application for employment.
+                        </div>
+                        <div class="form-group col-sm-12">
+                            5. If an application for employment is successful, data about employees (including sensitive personal data) may also be collected from employees during the period of their employment with us and from other sources such as third party background checks, any registered credit reporting agency, any regulatory authorities and any authority, central depository or depository agent in relation to the securities industry.
+                        </div>
+                        <div class="form-group col-sm-12">
+                            6. Please be informed that your Personal Data may be disclosed, disseminated and/or transferred within ENG PENG, or to our affiliates, auditors, banks, governmental departments and/or agencies, regulatory and/or statutory bodies and any such third party requested or authorized by you, whether within or outside Malaysia, for any of the above-mentioned purposes or any other purpose for which your Personal Data to be disclosed at the time of its collection or any other purpose directly related to any of the above Purposes.
+                        </div>
+                        <div class="form-group col-sm-12">
+                            7. To this end, we are committed to ensuring the confidentiality, protection, security and accuracy of your Personal Data made available to us.
+                        </div>
+                        <div class="form-group col-sm-12">
+                            8. It is your obligation to ensure that the Personal Data provided to us are accurate, not misleading, updated and complete in all aspects.
+                        </div>
+                        <div class="form-group col-sm-12">
+                            9. Any Personal Data supplied by you will be retained by us as long as the purpose it was collected for remains valid or as is required to satisfy any legal, regulatory and/ or accounting requirements.
+                        </div>
+                        <div class="form-group col-sm-12">
+                            10. In any circumstances where you may have provided Personal Data relating to other individuals, you represent and warrant that you are authorised to provide their Personal Data to us and you have obtained their consent for their Personal Data to be processed by us in the manner as described in this notice.
+                        </div>
+                        <div class="form-group col-sm-12">
+                            11. You may contact ENG PENG's Human Resources Department in the event you require access to and/or wish to make corrections to your Personal Data.
+                        </div>
+                        <div class="form-group col-sm-12">
+                            12. We reserve the right to amend this Notice at any time and will ensure that a notice of such amendments will be made available to you through the ENG PENG's webpage, intranet or through any other method we view appropriate and suitable.
+                        </div>
+                        <div class="form-group col-sm-12">
+                            13. By proceeding to fill in, partially or completely, this application form, you are deemed to have consented and agreed to the terms stated above with respect to our processing of your Personal Data as described in this notice and that you declare that you have read, understood and accepted the statements and terms herein.
+                        </div>      
+                        <div class="form-group col-sm-12">
+                            <div>Do you understand & agree with the above?</div>
+                            <div class="col-sm-12">
+                                <input type="radio" name="pdpa" value="1"> Yes, I have read, understood & agreed to the above, and would like to proceed<span></span><br>
+                                <input type="radio" name="pdpa" value="0"> No, I do not agree with the above<span></span>
+                            </div>
+                        </div>                 
+                    </div>
+                </section>
+        		<!-- SECTION Personal Information -->
+                <h4></h4>
+                <section>
+                    <h3>Personal Information</h3>
+                	<div class="form-group row">
+                        <div class="col-sm-6">                                                    
+                            <input type="text" name="fullName" class="form-control" placeholder="Full Name">
+                        </div>
+                        <div class="col-sm-6">                            
+                            <input type="text" name="chineseName"class="form-control" placeholder="Name in Chinese (If Any)">
+                        </div>
+                	</div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">                            
+                            <input type="text" name="icPassport" class="form-control" placeholder="NRIC/Passport No.">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="phoneNumber" class="form-control" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">                            
+                            <input type="text" name="age" class="form-control" placeholder="Age">
+                        </div>
+                        <div class="col-sm-6">
+                            <div><label>Gender</label></div>
+							<div class="col-sm-6 row">
+                                <div class="col-sm-6 row">
+                                    <div><input type="radio" name="gender" value="male"></div>
+                                    <div class="col-sm-10"><label>Male</label></div>
+                                </div>        
+                                <div class="col-sm-6 row">
+                                    <div><input type="radio" name="gender" value="female"></div>
+                                    <div class="col-sm-10"><label>Female</label></div>
+                                </div>                     
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <i class="zmdi zmdi-map"></i>
+                            <input type="text" name="nationality" class="form-control" placeholder="Nationality">
+                        </div>
+                        <div class="col-sm-6">
+                            <i class="zmdi zmdi-eye"></i>
+                            <input type="text" name="dob" id="dob" class="form-control" placeholder="Date of Birth">
+                        </div>
+                    </div>
+					<div class="form-group row">
+                        <div class="col-sm-6">
+                            <i class="zmdi zmdi-map"></i>
+                            <input type="text" name="birthPlace" class="form-control" placeholder="Place of Birth">
+                        </div>
+                        <div class="col-sm-6">
+                            <i class="zmdi zmdi-eye"></i>
+                            <input type="text" name="religion" class="form-control" placeholder="Religion">
+                        </div>
+                    </div>
+					<div class="form-group row">
+						<div class="col-sm-6">
+                            <i class="zmdi zmdi-map"></i>
+                            <input type="text" name="race" class="form-control" placeholder="Race/Tribe/Dialect">
+                        </div>
+						<div class="form-holder"></div>
+                        
+					</div>
+                </section>
+
+				<!-- SECTION 2 MARITAL STATUS-->
+                <h4></h4>
+                <section>
+                	<h3>Marital Status</h3>
+                    <div class="form">
+                        <div>
+                            <label>Marital Status</label>
+                        </div>
+						<div class="form-group">
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="marital_status" value="single">
+                                </div>
+                                <div class="col-sm-3">
+                                    <label>Single</label>
+                                </div>
+							      
+                             </div>
+                            <div class="col-sm-6 row">
+							     <input type="radio" name="marital_status" value="married">
+                                 <div class="col-sm-3">
+                                    <label>Married</label>
+                                </div>
+                             </div>
+                            <div class="col-sm-6 row">
+							     <input type="radio" name="marital_status" value="divorced">
+                                 <div class="col-sm-3">
+                                    <label>Divorced</label>
+                                </div>
+                             </div>
+                            <div class="col-sm-6 row">
+							     <input type="radio" name="marital_status" value="widow">
+                                 <div class="col-sm-3">
+                                    <label>Widow</label>
+                                </div>
+                             </div>
+                            <div class="col-sm-6 row">
+							     <input type="radio" name="marital_status" value="widower">
+                                 <div class="col-sm-3">
+                                    <label>Widower</label>
+                                </div>
+                             </div>
+						</div>
+                        <br>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="spouse_name" id="spouse_name" placeholder="Spouse's Name (If Any)">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="children_no" id="children_no" placeholder="No. of Children (If Any)">
+                        </div>
+                        <div class="col-sm-4">
+                            <button class="btn add_spouse">Add</button>
+                        </div>
+                    </div>
+                    <!-- Populate table of spouse's name-->
+                    <div class="form-group">
+                        <table class="table table-bordered" id="spouse-table">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>No. of Children</th>                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                        </tbody>
+                      </table>                              
+                    </div>
+                </section>
+
+                <!-- SECTION 3 ADDRESSES & TRANSPORTATION-->
+                <h4></h4>
+                <section>
+                    <h3 style="margin-bottom: 16px;">ADDRESSES & TRANSPORTATION</h3>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" name="postal_address" placeholder="POSTAL ADDRESS">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" name="current_address" placeholder="CURRENT RESIDENTIAL ADDRESS">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>Do you have a valid driving license, and if so, what class of license?</div>
+                        <div class="col-sm-6 row">
+                            <div>
+                                <input type="checkbox" name="driving_license" value="1">
+                            </div>
+                            <div class="col-sm-10">
+                                <label>Class B, B1 or B2 - Motorcycle</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 row">
+                            <div>
+                                <input type="checkbox" name="driving_license" value="2">
+                            </div>
+                            <div class="col-sm-10">
+                                <label>Class DA - Motor car, automatic only</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 row">
+                            <div>
+                                <input type="checkbox" name="driving_license" value="3">    
+                            </div>
+                            <div class="col-sm-10">
+                                <label>Class D - Motor car, manual & automatic</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 row">
+                            <div>
+                                <input type="checkbox" name="driving_license" value="4">    
+                            </div>
+                            <div class="col-sm-10">
+                                <label>Class E, E1, E2 - Heavy vehicle, lori</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 row">
+                            <div>
+                                <input type="checkbox" name="driving_license" value="5">    
+                            </div>
+                            <div class="col-sm-10">
+                                <label>No, I don't have a valid driving license</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>Do you have your own transport i.e. own a vehicle that you can use at any time when required?</div>
+                        <div class="col-sm-12 row">
+                            <div>
+                                <input type="radio" name="own_transport" value="1">    
+                            </div>
+                            <div class="col-sm-10">
+                                <label>Yes</label>    
+                            </div>  
+                        </div>                          
+                        <div class="col-sm-12 row">
+                            <div>
+                                <input type="radio" name="own_transport" value="0">    
+                            </div>
+                            <div class="col-sm-10">
+                                <label>No</label>    
+                            </div>  
+                        </div>  
+                    </div>
+                </section>
+
+                <!-- SECTION 4 PARTICULARS OF FAMILY & FRIENDS-->
+                <h4></h4>
+                <section>
+                    <h3>PARTICULARS OF FAMILY & FRIENDS</h3>
+                    <div class="">
+                        <div class="form-group">
+                            <div>Please submit i) full name, ii) relation, iii) occupation/job title and iv) employer name for members of your immediate family including your spouse, children, parents and siblings for example:
+                        Wilfred bin Sabah, brother, 019-800 18XX, Manager, Power Rangers Sdn Bhd
+                        Anna bt Sabahan, daughter, 019-888, 8xxx, auditor, LHDN,
+                            </div>
+                            <br>
+                            <div>
+                                Please also submit the name of any of your relatives or friends currently working for Eng Peng.
+                            </div>
+                        </div>
+                        <br>
+                        <div>FAMILY MEMBER(s)</div>
+                        <br>
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" placeholder="Name" name="fam_name" id="fam_name">
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" placeholder="Relation" name="fam_relation" id="fam_relation">
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" placeholder="Occupation" name="fam_occupation" id="fam_occupation">
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" placeholder="Contact number " name="fam_phone" id="fam_phone">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" placeholder="Organisation/Company" name="fam_company" id="fam_company">
+                            </div>                            
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-9">
+                            </div>
+                            <div class="col-sm-3" style="text-align: right;">
+                                <button class="btn add-row-family">Add</button>
+                            </div>
+                        </div>
+                        <!-- Populate table for family member-->
+                        <div class="form-group">
+                            <table class="table table-bordered" id="family-table">
+                            <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>Relation</th>
+                                <th>Occupation</th>
+                                <th>Contact No.</th>
+                                <th>Organisation/Company</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              
+                            </tbody>
+                          </table>                              
+                        </div>
+                        <br>
+                        <div>RELATIVE / FRIEND CURRENTLY WORKING IN ENG PENG</div>
+                        <br>
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" placeholder="Name" name="friend_name" id="friend_name">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" placeholder="Relation" name="friend_relation" id="friend_relation">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" placeholder="Position" name="friend_position" id="friend_position">
+                            </div> 
+                            <div class="col-sm-3" style="text-align: right;">
+                                <button class="btn add-row-friend">Add</button>
+                            </div>                           
+                        </div> 
+                        <!-- Populate relative/friend working in Eng Peng-->
+                        <div class="form-group">
+                            <table class="table table-bordered" id="friend-table">
+                            <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>Relation</th>
+                                <th>Position</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              
+                            </tbody>
+                          </table>                              
+                        </div>
+                        <br>
+                        <div>
+                            
+                        </div>                       
+                    </div>                    
+                </section>
+                <!-- SECTION 5 PERSONAL REFERENCES-->
+                <h4></h4>
+                <section>
+                    <h3>PERSONAL REFERENCES</h3>
+                    <div class="">
+                        <div class="form-group">
+                            <div>You may submit up to three(3) persons as your personal references by submitting i) the full name of the person, ii) his/her contact number and/or email, iii) his/her position in what organisation. For example: Mr Wilfred bin Sabah, 019-800 18XX, Manager, Power Rangers Sdn Bhd
+                            </div>
+                            <br>
+                            <div>
+                                You are advised not to submit your family or relatives as reference
+                            </div>
+                        </div>
+                        <br>
+                        <div>PERSONAL REFERENCE(s)</div>
+                        <br>
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" placeholder="Name" name="ref_name" id="ref_name">                                
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" placeholder="Contact no./Email" name="ref_contact" id="ref_contact">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" placeholder="Position" name="ref_position" id="ref_position">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" placeholder="Organisation/Company" name="ref_company" id="ref_company">
+                            </div>                            
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-9">
+                            </div>
+                            <div class="col-sm-3" style="text-align: right;">
+                                <button class="btn add-reference">Add</button>
+                            </div>
+                        </div>
+                        <!-- Populate personal reference-->
+                        <div class="form-group">
+                            <table class="table table-bordered" id="reference-table">
+                            <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>Contact No./Email</th>
+                                <th>Position</th>
+                                <th>Organisation/Company</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              
+                            </tbody>
+                          </table>                              
+                        </div>
+                        <br>                                                
+                    </div>                    
+                </section>
+                <!-- SECTION APPLICATION DETAIL-->
+                <h4></h4>
+                <section>
+                    <h3>APPLICATION DETAIL</h3>
+                    <div class="">                        
+                        <div class="form-group row">
+                            <div class="col-sm-4">
+                                <label class=" form-control-label">POSITION APPLIED FOR</label>
+                                <input type="text" id="position_applied" name="position_applied" class="form-control" required>
+                            </div>                                                     
+                        </div>
+                        <div class="form-group">
+                            <div>LEVEL OF POSITION APPLYING FOR</div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="position_level" value="1">
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Clerical</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="position_level" value="2">
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Supervisor (office based)</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="position_level" value="3">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Executive, Professional Engineering/Science position</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="position_level" value="4">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Manager</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="position_level" value="5">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Director</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="position_level" value="6">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>General Worker</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="position_level" value="7">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Production Operator</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="position_level" value="8">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Production Supervisor</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="position_level" value="9">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Technician</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="position_level" value="10">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Internship</label>
+                                </div>
+                            </div>
+                        </div>        
+                        <div class="form-group">
+                            <div>LEVEL OF POSITION PREVIOUSLY ATTAINED</div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="checkbox" name="prev_position_level" value="1">
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Clerical</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="checkbox" name="prev_position_level" value="2">
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Supervisor</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="checkbox" name="prev_position_level" value="3">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Executive, Professional Engineering/Science position</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="checkbox" name="prev_position_level" value="4">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Manager</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="checkbox" name="prev_position_level" value="5">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Director</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="checkbox" name="prev_position_level" value="6">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Not Applicable/Applying for First Permanent Job</label>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label class=" form-control-label">Expected Salary (gross in Ringgit Malaysia per month)</label>
+                                <input type="text" id="expected_salary" name="expected_salary" class="form-control" required>
+                            </div>   
+                            <div class="col-sm-6">
+                                <label class=" form-control-label">Previous Salary (gross in Ringgit Malaysia per month)</label>
+                                <input type="text" id="prev_salary" name="prev_salary" class="form-control" required>
+                            </div>                                                   
+                        </div> 
+                        <div class="form-group">
+                            <div>When can you start work if you are offered a job?</div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="start_work" value="1">
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Immediately</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="start_work" value="2">
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>One(1) week</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="start_work" value="3">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Two(2) weeks</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="start_work" value="4">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Four(4) weeks</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="start_work" value="5">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Two(2) months</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="start_work" value="6">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Three(3) months</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="start_work" value="7">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Other</label>  
+                                    <input type="text" name="other_name" class="form-control">                                  
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="form-group">
+                            <div>How did you learn about this job offer?</div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="learn_job_offer" value="1">
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Facebook or other social media platform</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="learn_job_offer" value="2">
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Online Job portal, e.g. JobStreet, SabahJob, Jora, etc.</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="learn_job_offer" value="3">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Newspaper advertisement</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="learn_job_offer" value="4">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>From friend/relative</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="learn_job_offer" value="5">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Contacted HR@engpeng directly</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="radio" name="learn_job_offer" value="6">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Other</label>  
+                                    <input type="text" name="learn_job_offer_other" class="form-control">                                  
+                                </div>
+                            </div>
+                        </div>      
+                    </div>              
+                </section>
+                <!-- SECTION 6 - EDUCATION BACKGROUND-->
+                <h4></h4>
+                <section>
+                    <h3>EDUCATION BACKGROUND</h3>
+                    <div class="">                        
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <label class=" form-control-label">List your top three(3) education qualification attained in descending order i.e. the highest qualification first</label>
+                            </div>                                                     
+                        </div>
+                        <div class="form-group">
+                            <div>HIGHEST ACADEMIC QUALIFICATION ATTAINED</div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="checkbox" name="academic_qualification" value="1">
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Primary</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="checkbox" name="academic_qualification" value="2">
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Secondary/Middle School</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="checkbox" name="academic_qualification" value="3">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Diploma</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="checkbox" name="academic_qualification" value="4">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Undergraduate Degree</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="checkbox" name="academic_qualification" value="5">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Post Graduate Diploma</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="checkbox" name="academic_qualification" value="6">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Master Degree</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="checkbox" name="academic_qualification" value="7">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>PhD or Higher</label>
+                                </div>
+                            </div>                            
+                            <div class="col-sm-6 row">
+                                <div>
+                                    <input type="checkbox" name="academic_qualification" value="8">    
+                                </div>
+                                <div class="col-sm-10">
+                                    <label>Other</label>
+                                    <input type="text" name="academic_qualification_other" class="form-control">      
+                                </div>
+                            </div>
+                        </div>        
+                        <div>EDUCATION ATTAINED</div>
+                        <br>
+                        <div class="form-group row">
+                            <div class="col-sm-3">                                
+                                <select class="form-control" name="qualification" id="qualification">
+                                    <option value="0">-Qualification-</option>
+                                    <option value="1">Primary</option>
+                                    <option value="2">Secondary/Middle School</option>
+                                    <option value="3">Diploma</option>
+                                    <option value="4">Undergraduate Degree</option>
+                                    <option value="5">Post Graduate Diploma</option>
+                                    <option value="6">Master Degree</option>
+                                    <option value="7">PhD or Higher</option>
+                                    <option value="8">PhD or Higher</option>                                 
+                                </select>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" placeholder="Institution" name="institution" id="institution">
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" placeholder="Year started" name="ystarted" id="ystarted">
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" placeholder="Year finished" name="yfinished" id="yfinished">
+                            </div>
+                            <div class="col-sm-2" style="text-align: right;">
+                                <button class="btn add-qualification">Add</button>
+                            </div>     
+                        </div>                        
+                        <!-- Populate personal reference-->
+                        <div class="form-group">
+                            <table class="table table-bordered" id="qualification-table">
+                            <thead>
+                              <tr>
+                                <th>Qualification</th>
+                                <th>Institution</th>
+                                <th>Year started</th>
+                                <th>Year finished</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              
+                            </tbody>
+                            </table>                              
+                        </div>
+                        <br>                              
+                                                                          
+                    </div>              
+                </section>
+                <!-- PERSONALITY AND IQ-->
+                <h4></h4>
+                <section>
+                    <h3>PERSONALITY AND IQ</h3>
+                    <div class="">                        
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <label class=" form-control-label">Please note that there are no right or wrong answers, nor is there a "passing score" for this section.</label>
+                            </div>     
+                            <div class="col-sm-12">
+                                <label class=" form-control-label">Your scores and supposed personality type alone will not determine if you are suitable for a position or will be successful in your application.</label>
+                            </div>  
+                            <div class="col-sm-12">
+                                <label class=" form-control-label">You are advised to answer the tests/questionnaires as honest as possible, and to the best of your ability WITHOUT USING EXTERNAL REFERENCE (i.e. no googling for the "best" answers).</label>
+                            </div>                                                  
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <div><b>Complete the questionnaire available at this URL/site below and select the "Personality Type" you get at the end:</b></div>
+                            <div><a href="http://www.16personalities.com/free-personality-test" target="_blank">CLICK HERE</a></div>
+                            <div class="col-sm-12 row">  
+                                <div class="col-sm-2 row">
+                                    <div><input type="radio" name="personality_test" value="ISTJ"></div>
+                                    <div class="col-sm-10"><label>ISTJ</label></div>
+                                </div>  
+                                <div class="col-sm-2 row">
+                                    <div><input type="radio" name="personality_test" value="ISTP"></div>
+                                    <div class="col-sm-10"><label>ISTP</label></div>
+                                </div>    
+                                <div class="col-sm-2 row">
+                                    <div><input type="radio" name="personality_test" value="ISFJ"></div>
+                                    <div class="col-sm-10"><label>ISFJ</label></div>
+                                </div> 
+                                <div class="col-sm-2 row">
+                                    <div><input type="radio" name="personality_test" value="ISFP"></div>
+                                    <div class="col-sm-10"><label>ISFP</label></div>
+                                </div>                           
+                            </div>   
+                            <div class="col-sm-12 row">  
+                                <div class="col-sm-2 row">
+                                    <div><input type="radio" name="personality_test" value="INTJ"></div>
+                                    <div class="col-sm-10"><label>INTJ</label></div>
+                                </div>  
+                                <div class="col-sm-2 row">
+                                    <div><input type="radio" name="personality_test" value="INTP"></div>
+                                    <div class="col-sm-10"><label>INTP</label></div>
+                                </div>    
+                                <div class="col-sm-2 row">
+                                    <div><input type="radio" name="personality_test" value="ESTP"></div>
+                                    <div class="col-sm-10"><label>ESTP</label></div>
+                                </div> 
+                                <div class="col-sm-2 row">
+                                    <div><input type="radio" name="personality_test" value="ESTJ"></div>
+                                    <div class="col-sm-10"><label>ESTJ</label></div>
+                                </div>                            
+                            </div>   
+                            <div class="col-sm-12 row">  
+                                <div class="col-sm-2 row">
+                                    <div><input type="radio" name="personality_test" value="ENFP"></div>
+                                    <div class="col-sm-10"><label>ENFP</label></div>
+                                </div>  
+                                <div class="col-sm-2 row">
+                                    <div><input type="radio" name="personality_test" value="ENFJ"></div>
+                                    <div class="col-sm-10"><label>ENFJ</label></div>
+                                </div>    
+                                <div class="col-sm-2 row">
+                                    <div><input type="radio" name="personality_test" value="ENTP"></div>
+                                    <div class="col-sm-10"><label>ENTP</label></div>
+                                </div> 
+                                <div class="col-sm-2 row">
+                                    <div><input type="radio" name="personality_test" value="ENTJ"></div>
+                                    <div class="col-sm-10"><label>ENTJ</label></div>
+                                </div>                            
+                            </div>    
+                            <div class="col-sm-12 row">  
+                                <div class="col-sm-2 row">
+                                    <div><input type="radio" name="personality_test" value="ESFJ"></div>
+                                    <div class="col-sm-10"><label>ESFJ</label></div>
+                                </div>  
+                                <div class="col-sm-2 row">
+                                    <div><input type="radio" name="personality_test" value="ESFP"></div>
+                                    <div class="col-sm-10"><label>ESFP</label></div>
+                                </div>    
+                                <div class="col-sm-2 row">
+                                    <div><input type="radio" name="personality_test" value="INFP"></div>
+                                    <div class="col-sm-10"><label>INFP</label></div>
+                                </div> 
+                                <div class="col-sm-2 row">
+                                    <div><input type="radio" name="personality_test" value="INFJ"></div>
+                                    <div class="col-sm-10"><label>INFJ</label></div>
+                                </div>                            
+                            </div>                  
+                        </div>    
+                        <div class="form-group col-sm-12">
+                            <div><b>Complete the test at this URL/site listed below and enter the score you obtained:</b></div>
+                            <div><a href="http://www.arealme.com/iq/en/" target="_blank">CLICK HERE</a></div>
+                            <div class="col-sm-6 row">  
+                                <input type="text" class="form-control" placeholder="Your answer" name="iq_test">
+                            </div>
+                        </div>                                                      
+                    </div>                                  
+                </section>
+                <!-- LANGUAGE PROFICIENCIES-->
+                <h4></h4>
+                <section>
+                    <h3>LANGUAGE PROFICIENCIES</h3>
+                    <div class="">                        
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <label class="form-control-label"><b>0 – No Proficiency</b></label>
+                            </div>     
+                            <div class="col-sm-12">
+                                <label class=" form-control-label">No knowledge of the language. The person may know a few words, but can’t form sentences or carry on any type of conversation.</label>
+                            </div>                                                                              
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <label class="form-control-label"><b>1 – Elementary Proficiency</b></label>
+                            </div>     
+                            <div class="col-sm-12">
+                                <label class=" form-control-label">Can form basic sentences, including asking and answering simple questions.</label>
+                            </div>                                                                              
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <label class="form-control-label"><b>2 – Limited Working Proficiency</b></label>
+                            </div>     
+                            <div class="col-sm-12">
+                                <label class=" form-control-label">Can handle basic work commands and social phrases. Can carry on limited casual conversations at the office and discuss their personal life. Still needs help with more extensive conversations in the language. Can only operate independently in basic conversations. Very limited written communication without making references or help from others.</label>
+                            </div>                                                                              
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <label class="form-control-label"><b>3 – Professional Working Proficiency</b></label>
+                            </div>     
+                            <div class="col-sm-12">
+                                <label class=" form-control-label">Can make contributions to office meetings, have conversations with clients, and carry out most work functions requested of them. Can speak at a normal speed in the language and has a fairly extensive vocabulary. Might require help understanding subtle and nuanced phrasing. Can carry on with normal written communications in letters or emails.</label>
+                            </div>                                                                              
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <label class="form-control-label"><b>4 – Full Professional Proficiency</b></label>
+                            </div>     
+                            <div class="col-sm-12">
+                                <label class=" form-control-label">Can have advanced discussions on a wide range of topics about personal life, current events, and technical topics such as business and finance. People at this level may still have a minor accent and may occasionally misspeak or make minor mistakes. Their vocabulary is extensive and they can carry on conversations with ease.</label>
+                            </div>                                                                              
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <label class="form-control-label"><b>5 – Native / Bilingual Proficiency</b></label>
+                            </div>     
+                            <div class="col-sm-12">
+                                <label class=" form-control-label">Was either raised speaking the language as their native tongue or has been speaking it so long that they are completely fluent.</label>
+                            </div>                                                                              
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <div><b>English Language Proficiency</b></div>   
+                            <div class="col-sm-12 row">  
+                                <div class="col-sm-2 row"></div>                                    
+                                <div class="col-sm-1 row">0</div>  
+                                <div class="col-sm-1 row">1</div>    
+                                <div class="col-sm-1 row">2</div> 
+                                <div class="col-sm-1 row">3</div> 
+                                <div class="col-sm-1 row">4</div>
+                                <div class="col-sm-1 row">5</div>                               
+                                <div class="col-sm-2 row"></div>                          
+                            </div>                         
+                            <div class="col-sm-12 row">  
+                                <div class="col-sm-2 row">None</div>                                    
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="english" value="0"></div>                                    
+                                </div>  
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="english" value="1"></div>
+                                </div>    
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="english" value="2"></div>
+                                </div> 
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="english" value="3"></div>
+                                </div> 
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="english" value="4"></div>
+                                </div>
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="english" value="5"></div>
+                                </div>
+                                <div class="col-sm-2 row">Native / Bilingual Proficiency</div>                          
+                            </div>
+                        </div> 
+                        <div class="form-group col-sm-12">
+                            <div><b>Bahasa Malaysia Proficiency</b></div>   
+                            <div class="col-sm-12 row">  
+                                <div class="col-sm-2 row"></div>                                    
+                                <div class="col-sm-1 row">0</div>  
+                                <div class="col-sm-1 row">1</div>    
+                                <div class="col-sm-1 row">2</div> 
+                                <div class="col-sm-1 row">3</div> 
+                                <div class="col-sm-1 row">4</div>
+                                <div class="col-sm-1 row">5</div>                               
+                                <div class="col-sm-2 row"></div>                          
+                            </div>                         
+                            <div class="col-sm-12 row">  
+                                <div class="col-sm-2 row">None</div>                                    
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="bahasa_malaysia" value="0"></div>                                    
+                                </div>  
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="bahasa_malaysia" value="1"></div>
+                                </div>    
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="bahasa_malaysia" value="2"></div>
+                                </div> 
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="bahasa_malaysia" value="3"></div>
+                                </div> 
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="bahasa_malaysia" value="4"></div>
+                                </div>
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="bahasa_malaysia" value="5"></div>
+                                </div>
+                                <div class="col-sm-2 row">Native / Bilingual Proficiency</div>                          
+                            </div>
+                        </div> 
+                        <div class="form-group col-sm-12">
+                            <div><b>Chinese Language Proficiency</b></div>
+                            <div><small>Hint: if you are not at a level you can communicate with someone from China using emails and text messages in Chinese, you are not at level 3 yet.</small></div>   
+                            <div class="col-sm-12 row">  
+                                <div class="col-sm-2 row"></div>                                    
+                                <div class="col-sm-1 row">0</div>  
+                                <div class="col-sm-1 row">1</div>    
+                                <div class="col-sm-1 row">2</div> 
+                                <div class="col-sm-1 row">3</div> 
+                                <div class="col-sm-1 row">4</div>
+                                <div class="col-sm-1 row">5</div>                               
+                                <div class="col-sm-2 row"></div>                          
+                            </div>                         
+                            <div class="col-sm-12 row">  
+                                <div class="col-sm-2 row">None</div>                                    
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="chinese" value="0"></div>                                    
+                                </div>  
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="chinese" value="1"></div>
+                                </div>    
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="chinese" value="2"></div>
+                                </div> 
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="chinese" value="3"></div>
+                                </div> 
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="chinese" value="4"></div>
+                                </div>
+                                <div class="col-sm-1 row">
+                                    <div><input type="radio" name="chinese" value="5"></div>
+                                </div>
+                                <div class="col-sm-2 row">Native / Bilingual Proficiency</div>                          
+                            </div>
+                        </div>                                                                                                           
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <div><b>Other language proficiencies you might have</b></div>
+                        <div><small>Language - proficiency level</small></div> 
+                        <div class="col-sm-6 row">
+                            <textarea class="form-control" id="other_language" name="other_language" rows="3"></textarea>
+                        </div>
+                    </div>              
+                </section>
+                <!-- SECTION COMPUTER PROFICIENCIES #88F900-->
+                <h4></h4>
+                <section>
+                    <h3 style="margin-bottom: 16px;">COMPUTER PROFICIENCIES</h3>
+                    
+                    <div class="form">
+                            <div class="col-sm-8 offset-sm-2" style="border:1px solid black">
+                                <p style="padding-top:10px">
+                                    <span style="color:#F90000; font-weight: bold;">None</span> - no knowledge, or very limited knowledge to be useful at work
+                                </p>
+                                <p style="padding-top:10px">
+                                    <span style="color:#F98800; font-weight: bold;">Basic</span> - Can enter text or data, perform basic formatting, page setup, printing.
+                                </p>
+                                <p style="padding-top:10px">
+                                    <span style="color:#F9E600; font-weight: bold;">Intermediate</span> - can work with complex tables, use formulas and function in Excel, do merges, sort & filtering, create pages with multiple elements such as charts, graphics, tables, multi-media, can work with pivot table.
+                                </p>
+                                <p style="padding-top:10px">
+                                    <span style="color:#2ECC71; font-weight: bold;">Advanced</span> - can work with templates, use macros & VB for automation, can work with titles, ToC & index in Words.
+                                </p>
+                            </div>
+                            <br>
+                            <div class="col-sm-2"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-3 offset-sm-1"></div>
+                            <div class="col-sm-2" style="text-align:center; color:#F90000; font-weight: bold;"><span style="">None</span></div>
+                            <div class="col-sm-2" style="text-align:center; color:#F98800; font-weight: bold;"><span style="text-align:center">Basic</span></div>
+                            <div class="col-sm-2" style="text-align:center; color:#F9E600; font-weight: bold;"><span style="text-align:center">Intermediate</span></div>
+                            <div class="col-sm-2" style="text-align:center; color:#2ECC71; font-weight: bold;"><span style="text-align:center">Advanced</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                            <div class="col-sm-3 offset-sm-1">Microsoft Word or equivalent</div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_word" value="1"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_word" value="2"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_word" value="3"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_word" value="4"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-3 offset-sm-1">Microsoft Excel or equivalent</div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_excel" value="1"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_excel" value="2"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_excel" value="3"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_excel" value="4"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-3 offset-sm-1">PowerPoint or equivalent</div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_powerPoint" value="1"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_powerPoint" value="2"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_powerPoint" value="3"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_powerPoint" value="4"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-3 offset-sm-1">AutoCAD or equivalent</div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_autoCad" value="1"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_autoCad" value="2"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_autoCad" value="3"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_autoCad" value="4"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-3 offset-sm-1">Coding & Programming</div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_codeProg" value="1"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_codeProg" value="2"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_codeProg" value="3"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_codeProg" value="4"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-3 offset-sm-1">Database & SQL</div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_databSQL" value="1"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_databSQL" value="2"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_databSQL" value="3"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_databSQL" value="4"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-3 offset-sm-1">Photo / video Editing</div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_mediaEditing" value="1"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_mediaEditing" value="2"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_mediaEditing" value="3"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_mediaEditing" value="4"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-3 offset-sm-1">Computer Hardware</div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_hardware" value="1"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_hardware" value="2"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_hardware" value="3"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_hardware" value="4"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-3 offset-sm-1">Networking</div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_networking" value="1"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_networking" value="2"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_networking" value="3"></div>
+                            <div class="col-sm-2" style="text-align:center; "><input type="radio" name="comp_networking" value="4"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group row">
+                        <div class="col-sm-10 offset-sm-1"><label for="comp_others">Other computer related proficiencies you might have</label>
+                            <textarea class="form-control" id="comp_others" name="comp_others" rows="4"></textarea>
+                        </div>
+                    </div>
+                </section>
+            
+            <!-- SECTION EMPLOYMENT HISTORY -->
+                <h4></h4>
+                <section>
+                    <h3>EMPLOYMENT HISTORY</h3>
+                    <div class="form-group row">
+                        <div class="col-sm-12" style="text-align:center">List up to three (3) of your latest employment / work experience starting with most recent.</div>
+                    </div>
+                    
+                    <div id="firstemployment">                        
+                        <div class="form-group row">
+                            <div class="col-sm-4">
+                                <label>Organisation/Company</label>
+                                <input type="text" class="form-control" name="orgname"  id="orgname" required="required">
+                            </div>
+                            <div class="col-sm-4">
+                                <label>Position</label>
+                                <input type="text"  class="form-control" name="position" id="position" required="required">
+                            </div>
+                            <div class="col-sm-4">
+                                <label>Last Salary (RM)</label>
+                                <input type="text" class="form-control" name="last_salary" id="last_salary" required="required">
+                            </div>
+                            
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-4">
+                                <label>Start date</label>
+                                <input type="date"  class="form-control" name="startdate" id="startdate" required="required">
+                            </div>
+                            <div class="col-sm-4">
+                                <label>End date (if any)</label>
+                                <input type="date"  class="form-control" name="enddate" id="enddate">
+                            </div>
+                            <div class="col-sm-4">
+                                <label>Reason for leaving</label>
+                                <textarea class="form-control" name="leaving_reason" id="leaving_reason" rows="5"></textarea> 
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12" style="text-align: right;">
+                                <button class="btn add-empHistory">Add</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <table class="table table-bordered" id="employment-table">
+                            <thead>
+                              <tr>
+                                <th>Organisation/Company</th>
+                                <th>Position</th>
+                                <th>Date started</th>
+                                <th>Date ended</th>
+                                <th>Last Salary (RM)</th>
+                                <th>Reason for leaving</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              
+                            </tbody>
+                            </table>                              
+                        </div>
+                    </div> <!-- end of firstemployment -->                    
+                </section>
+                
+                
+            <!-- SECTION PROFFESIONAL MEMBERSHIP -->
+                <h4></h4>
+                <section>
+                    <h3 style="margin-bottom: 16px;">PROFFESIONAL MEMBERSHIP</h3>
+                    <div></div>
+                        <div class="form">
+                            <div>
+                                <p style="text-align:center">
+                                    Please list any and all professional membership you hold or held in the recent past.
+                                </p>
+                                
+                                <p style="text-align:center">
+                                    <i>Examples of Professional Bodies in Malaysia include: BEM, IEM, MIA, IIAM, IKM, MPS, VAM</i>
+                                </p>
+                                
+                                <p style="text-align:center">
+                                    If you do not hold any professional membership, please skip this section.<br><b style="color:red">Do not list membership to trade association here.</b>
+                                </p>
+                            </div>
+                            <br>
+                        </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6"><label for="activeProfm">Active Professional Memberships (if any)<br>
+                                                            <small>Organisation, Start-year</small></label>
+                                                            <textarea class="form-control" id="activeProfm" name="activeProfm" rows="4"></textarea>
+                        </div>
+                        <div class="col-sm-6"><label for="pastProfm">Past Professional Memberships (if any)<br>
+                                                            <small>Organisation, Start-year, End-year</small></label>
+                                                            <textarea class="form-control" id="pastProfm" name="pastProfm" rows="4"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                        </div>
+                        <div class="col-sm-6">
+                        </div>
+                    </div>
+                </section>
+            
+            <!-- SECTION DECLARATION -->
+                <h4></h4>
+                <section>
+                    <h3 style="margin-bottom: 16px;">DECLARATION</h3>
+                    <div></div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">Have you ever been dismissed or retrenched from any of your previous employment?</div>
+                        <div class="col-sm-6">Do you have any past criminal convictions or ongoing criminal investigations or proceedings that you may be the subject of?</div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <input type="radio" name="ans1" value="1"> Yes<span></span><br>
+                            <input type="radio" name="ans1" value="0"> No<span></span>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="radio" name="ans2" value="1"> Yes<span></span><br>
+                            <input type="radio" name="ans2" value="0"> No<span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <div class="col-sm-6">Have you ever been or are you currently suffering from any serious illness, chronic disease or disability such as cancer, cardiovascular disease, diabetes, epilepsy or schizophrenia?</div>
+                        <div class="col-sm-6">Are you currently pregnant or do you expect to be pregnant within the next 12 months?</div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        
+                        <div class="col-sm-6">
+                            <input type="radio" name="ans3" value="1"> Yes<span></span><br>
+                            <input type="radio" name="ans3" value="0"> No<span></span>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="radio" name="ans4" value="1"> Yes<span></span><br>
+                            <input type="radio" name="ans4" value="0"> No<span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <div class="col-sm-6">Have you ever been declared bankrupt or had any order made against you under the Bankruptcy Act 1967?</div>
+                        <div class="col-sm-6">Have you been or are you currently having any addictive habit such as smoking, alcoholism, gambling or drug-taking?</div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <input type="radio" name="ans5" value="1"> Yes<span></span><br>
+                            <input type="radio" name="ans5" value="0"> No<span></span>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="radio" name="ans6" value="1"> Yes<span></span><br>
+                            <input type="radio" name="ans6" value="0"> No<span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <div class="col-sm-6">Are you currently applying for a government job?</div>
+                        <div class="col-sm-6">Is there anything that you are aware of that will prevent you from completing a two(2) years service if a job is offered to you now?</div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <input type="radio" name="ans7" value="1"> Yes<span></span><br>
+                            <input type="radio" name="ans7" value="0"> No<span></span>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="radio" name="ans8" value="1"> Yes<span></span><br>
+                            <input type="radio" name="ans8" value="0"> No<span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <div class="col-sm-12">I hereby declare that all information I have provided in this form is true to the best of my knowledge and I have not deliberately or knowingly provided any false information. I further agree that if any information I provided here is found to be false when I am employed at Eng Peng, it could lead to my immediate dismissal.</div>
+                        <div class="col-sm-12">
+                            <input type="radio" name="ans9" value="1"> Yes, I agree<span></span><br>
+                            <input type="radio" name="ans9" value="0"> No, I disagree<span></span>
+                        </div>
+                    </div>
+                </section>
+            </form>
+		</div>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="fontawesome-free-5.12.1-web/js/all.js"></script>
+		
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+
+		<script src="js/main.js"></script>
+
+<!-- Template created and distributed by Colorlib -->
+</body>
+</html>
