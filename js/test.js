@@ -7,6 +7,7 @@
 
         $(document).ready(function() {
             function triggerClick(elem) {   
+                console.log(elem);
                 $(elem).click();                               
             }
             var $progressWizard = $('.stepper'),
@@ -46,127 +47,127 @@
 
             $btn_next.on('click', function() {                
                 //validate inout
-                $('#job_application').validate({
-                    rules: {    
-                        email: {
-                            required: true,                            
-                        },                 
-                        pdpa:{
-                            required:true
-                        },
-                        fullName:{
-                            required:true
-                        }, 
-                        icPassport:{
-                            required:true
-                        },
-                        phoneNumber:{
-                            required:true
-                        },
-                        age:{
-                            required:true
-                        },
-                        gender:{
-                            required:true
-                        },
-                        nationality:{
-                            required:true
-                        },
-                        dob:{
-                            required:true
-                        },
-                        birthPlace:{
-                            required:true
-                        },
-                        religion:{
-                            required:true
-                        },
-                        race:{
-                            required:true
-                        },
-                        marital_status:{
-                            required:true
-                        },
-                        postal_address:{
-                            required:true
-                        },
-                        current_address:{
-                            required:true
-                        },
-                        driving_license:{
-                            required:true
-                        },
-                        own_transport:{
-                            required:true
-                        },
-                        position_applied:{
-                            required:true
-                        },
-                        position_level:{
-                            required:true
-                        },
-                        prev_position_level:{
-                            required:true
-                        },
-                        expected_salary:{
-                            required:true
-                        },
-                        prev_salary:{
-                            required:true
-                        },
-                        start_work:{
-                            required:true
-                        },
-                        learn_job_offer:{
-                            required:true
-                        },
-                        academic_qualification:{
-                            required:true
-                        },
-                        personality_test:{
-                            required:true                            
-                        },
-                        iq_test:{
-                            required:true
-                        },
-                        english:{
-                            required:true                            
-                        },
-                        bahasa_malaysia:{
-                            required:true                            
-                        },
-                        chinese:{
-                            required:true                            
-                        },
-                        comp_word:{
-                            required:true                            
-                        },
-                        comp_excel:{
-                            required:true                            
-                        },
-                        comp_powerPoint:{
-                            required:true                            
-                        },
-                        comp_autoCad:{
-                            required:true                            
-                        },
-                        comp_codeProg:{
-                            required:true                            
-                        },
-                        comp_databSQL:{
-                            required:true                            
-                        },
-                        comp_mediaEditing:{
-                            required:true                            
-                        },
-                        comp_hardware:{
-                            required:true                            
-                        },
-                        comp_networking:{
-                            required:true                            
-                        }
+                // $('#job_application').validate({
+                //     rules: {    
+                //         email: {
+                //             required: true,                            
+                //         },                 
+                //         pdpa:{
+                //             required:true
+                //         },
+                //         fullName:{
+                //             required:true
+                //         }, 
+                //         icPassport:{
+                //             required:true
+                //         },
+                //         phoneNumber:{
+                //             required:true
+                //         },
+                //         age:{
+                //             required:true
+                //         },
+                //         gender:{
+                //             required:true
+                //         },
+                //         nationality:{
+                //             required:true
+                //         },
+                //         dob:{
+                //             required:true
+                //         },
+                //         birthPlace:{
+                //             required:true
+                //         },
+                //         religion:{
+                //             required:true
+                //         },
+                //         race:{
+                //             required:true
+                //         },
+                //         marital_status:{
+                //             required:true
+                //         },
+                //         postal_address:{
+                //             required:true
+                //         },
+                //         current_address:{
+                //             required:true
+                //         },
+                //         driving_license:{
+                //             required:true
+                //         },
+                //         own_transport:{
+                //             required:true
+                //         },
+                //         position_applied:{
+                //             required:true
+                //         },
+                //         position_level:{
+                //             required:true
+                //         },
+                //         prev_position_level:{
+                //             required:true
+                //         },
+                //         expected_salary:{
+                //             required:true
+                //         },
+                //         prev_salary:{
+                //             required:true
+                //         },
+                //         start_work:{
+                //             required:true
+                //         },
+                //         learn_job_offer:{
+                //             required:true
+                //         },
+                //         academic_qualification:{
+                //             required:true
+                //         },
+                //         personality_test:{
+                //             required:true                            
+                //         },
+                //         iq_test:{
+                //             required:true
+                //         },
+                //         english:{
+                //             required:true                            
+                //         },
+                //         bahasa_malaysia:{
+                //             required:true                            
+                //         },
+                //         chinese:{
+                //             required:true                            
+                //         },
+                //         comp_word:{
+                //             required:true                            
+                //         },
+                //         comp_excel:{
+                //             required:true                            
+                //         },
+                //         comp_powerPoint:{
+                //             required:true                            
+                //         },
+                //         comp_autoCad:{
+                //             required:true                            
+                //         },
+                //         comp_codeProg:{
+                //             required:true                            
+                //         },
+                //         comp_databSQL:{
+                //             required:true                            
+                //         },
+                //         comp_mediaEditing:{
+                //             required:true                            
+                //         },
+                //         comp_hardware:{
+                //             required:true                            
+                //         },
+                //         comp_networking:{
+                //             required:true                            
+                //         }
 
-                    },
+                //     },
                     // messages: {
                     //     email: "Email is required", //notice the comma I added       
                     //     pdpa: "Please select agree or disagree to continue",   
@@ -185,19 +186,18 @@
                     // errorPlacement: function (error, element) {
                     //     alert(error.text());
                     // },
-                });
+                // });
 
-                if ((!$('#job_application').valid())) {
+                // if ((!$('#job_application').valid())) {
                     
-                    return false;
-                }
-                else{
-
+                //     return false;
+                // }
+                // else{
                     $tab_active = $progressWizard.find('.active');
                     $tab_active.next().removeClass('disabled');
                     $tab_next = $tab_active.next().find('a[data-toggle="tab"]');
                     triggerClick($tab_next);
-                }
+                // }
                 
 
             });
@@ -212,7 +212,7 @@
                 alert("test");
                         //ajax to save the data -testing
                 $.ajax({  
-                    url:"index.php",  
+                    url:"insert.process.php",  
                     method:"POST",  
                     data:{data : $('#job_application').serialize()},  
                     success:function(data){ 
@@ -294,8 +294,7 @@
             var TABLE_SPOUSE = [];
             $(".add_spouse").click(function(){
                 var name = $("#spouse_name").val();
-                var child_no = $("#children_no").val(); 
-                console.log(name);       
+                var child_no = $("#children_no").val();       
 
                 if(name == ""){
                     alert("Spouse's name is required");  
